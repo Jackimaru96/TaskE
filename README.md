@@ -4,7 +4,7 @@ This article is written for CS3219 Individual assignment Task E to explain other
 
 Reference is made from [Refactoring.Guru](https://refactoring.guru/refactoring) and [TutorialsPoint](https://www.tutorialspoint.com/design_pattern) and may include examples found in these websites.
 
-I will cover one design pattern from each of the **Creational** and  **Structural ** pattern since only two patterns are covered in lecture.
+I will cover one design pattern from each of the **Creational** and  **Structural** pattern since only two patterns are covered in lecture.
 
 
 
