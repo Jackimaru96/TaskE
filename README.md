@@ -29,13 +29,13 @@ This design pattern advices replacing direct object construction calls with call
 
 
 
-![image-20201108155515570](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20201108155515570.png)
+![image-20201108155515570](./Images/1.jpg)
 
 The subclass can override the factory method and change the class of products being created y the method `makeTransport()`
 
 The subclasses may return different types of products only if these products are derived from a common base class/interface. The factory method in the base class should have its return type declared in the interface. 
 
-![image-20201108160148409](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20201108160148409.png)
+![image-20201108160148409](./Images/2.jpg)
 
 In the above example, `Truck` and `Airplane` implement the `Transport` interface which declares a method called `deliver`. `Truck` and `Airplane` implement this method differently, with `Truck` delivering items by land and airplanes delivering items by air. The factory method in `RoadLogistics` class return `Truck` objects whereas `AirLogistics` returns `Airplane` objects using the factory method. 
 
@@ -45,7 +45,7 @@ The *Client* code which uses the *factory* method will not be able to tell the d
 
 ### General Structure
 
-![image-20201108161412969](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20201108161412969.png)
+![image-20201108161412969](./Images/3.jpg)
 
 1. The **Product** declares interface that is common to all objects which can be produced by creator and its subclasses
 2. **Concrete Products** represents different implementations of the product interface
@@ -71,11 +71,11 @@ The Proxy pattern advices one to create a new proxy class with the same interfac
 
 An example would be using a credit card as a proxy for bank account which in turn is a proxy for cash. Both of them would implement the same interface in which they are used for making payment. 
 
-![image-20201108162854899](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20201108162854899.png)
+![image-20201108162854899](./Images/4.jpg)
 
 ### General Structure
 
-![image-20201108163221270](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20201108163221270.png)
+![image-20201108163221270](./Images/5.jpg)
 
 1. The **ServiceInterface** declares interface of the Service. The Proxy follows this interface to disguise itself as a service object
 2. The **Service** class provides some business Logic
